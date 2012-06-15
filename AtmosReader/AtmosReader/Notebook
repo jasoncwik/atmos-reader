@@ -1,0 +1,21 @@
+SQL Used to Create SQLite table
+-------------------------------
+CREATE TABLE esu_objects 
+(pk integer primary key, 
+atmos_id string default "0", 
+last_modified datetime default CURRENT_TIMESTAMP, 
+creation_date datetime default CURRENT_TIMESTAMP,
+last_content_modified datetime default CURRENT_TIMESTAMP, 
+version integer default 1, 
+filepath string default "docs", 
+object_name string default "name",
+content_type string default "txt",
+object_type integer default 0,
+sync_state integer default 0, 
+size integer default 0,
+category_id integer default 0,
+notes string default "notes",
+summary string default "summary",
+keywords string default "keywords",
+bookmark integer default 0
+);

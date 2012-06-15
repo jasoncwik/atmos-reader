@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		753052E61587E0250064868D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 753052E51587E0250064868D /* UIKit.framework */; };
+		753052E81587E0250064868D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 753052E71587E0250064868D /* Foundation.framework */; };
+		753052EA1587E0250064868D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 753052E91587E0250064868D /* CoreGraphics.framework */; };
+		753052EC1587E0250064868D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 753052EB1587E0250064868D /* CoreData.framework */; };
+		753052F21587E0250064868D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 753052F01587E0250064868D /* InfoPlist.strings */; };
+		753052F41587E0250064868D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 753052F31587E0250064868D /* main.m */; };
+		753052FB1587E0250064868D /* AtmosReader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 753052F91587E0250064868D /* AtmosReader.xcdatamodeld */; };
+		7530530C1587E0700064868D /* AtmosBaseOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 753053021587E0700064868D /* AtmosBaseOperation.m */; };
+		7530530D1587E0700064868D /* AtmosCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = 753053041587E0700064868D /* AtmosCredentials.m */; };
+		7530530E1587E0700064868D /* AtmosLocalStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 753053061587E0700064868D /* AtmosLocalStore.m */; };
+		7530530F1587E0700064868D /* AtmosObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 753053081587E0700064868D /* AtmosObject.m */; };
+		753053101587E0700064868D /* AtmosProgressEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7530530A1587E0700064868D /* AtmosProgressEvent.m */; };
+		7530531A1587E07F0064868D /* AtmosUploadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 753053161587E07F0064868D /* AtmosUploadOperation.m */; };
+		7530531B1587E07F0064868D /* bg_img.png in Resources */ = {isa = PBXBuildFile; fileRef = 753053171587E07F0064868D /* bg_img.png */; };
+		753053331587E0930064868D /* button_base_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 7530531C1587E0930064868D /* button_base_blue.png */; };
+		753053341587E0930064868D /* button_base_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 7530531D1587E0930064868D /* button_base_red.png */; };
+		753053351587E0930064868D /* cloud_green_large.png in Resources */ = {isa = PBXBuildFile; fileRef = 7530531E1587E0930064868D /* cloud_green_large.png */; };
+		753053361587E0930064868D /* cloud_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 7530531F1587E0930064868D /* cloud_green.png */; };
+		753053371587E0930064868D /* cloud_image_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 753053201587E0930064868D /* cloud_image_small.png */; };
+		753053381587E0930064868D /* cloud_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 753053211587E0930064868D /* cloud_red.png */; };
+		753053391587E0930064868D /* cloud_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 753053221587E0930064868D /* cloud_yellow.png */; };
+		7530533A1587E0930064868D /* collection_icon_24x24.png in Resources */ = {isa = PBXBuildFile; fileRef = 753053231587E0930064868D /* collection_icon_24x24.png */; };
+		7530533B1587E0930064868D /* collection_icon_32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = 753053241587E0930064868D /* collection_icon_32x32.png */; };
+		7530533C1587E0930064868D /* collection_icon_42x42.png in Resources */ = {isa = PBXBuildFile; fileRef = 753053251587E0930064868D /* collection_icon_42x42.png */; };
+		7530533D1587E0930064868D /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 753053261587E0930064868D /* Default-Landscape.png */; };
+		7530533E1587E0930064868D /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 753053271587E0930064868D /* Default-Portrait.png */; };
+		7530533F1587E0930064868D /* esu_local.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 753053281587E0930064868D /* esu_local.sqlite */; };
+		753053401587E0930064868D /* EsuDownloadObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7530532A1587E0930064868D /* EsuDownloadObject.m */; };
+		753053411587E0930064868D /* EsuGetObjectsOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7530532C1587E0930064868D /* EsuGetObjectsOperation.m */; };
+		753053421587E0930064868D /* ext in Resources */ = {isa = PBXBuildFile; fileRef = 7530532D1587E0930064868D /* ext */; };
+		753053431587E0930064868D /* favorites_icon_16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = 7530532E1587E0930064868D /* favorites_icon_16x16.png */; };
+		753053441587E0930064868D /* favorites_icon_32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = 7530532F1587E0930064868D /* favorites_icon_32x32.png */; };
+		753053451587E0930064868D /* Icon-ipad-48x48.png in Resources */ = {isa = PBXBuildFile; fileRef = 753053301587E0930064868D /* Icon-ipad-48x48.png */; };
+		753053461587E0930064868D /* Icon-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 753053311587E0930064868D /* Icon-iPad.png */; };
+		753053471587E0930064868D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 753053321587E0930064868D /* Icon.png */; };
+		753053541587E0B20064868D /* Large_Image_trans_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 753053481587E0B20064868D /* Large_Image_trans_bg.png */; };
+		753053551587E0B20064868D /* Large_Image.xcf in Resources */ = {isa = PBXBuildFile; fileRef = 753053491587E0B20064868D /* Large_Image.xcf */; };
+		753053561587E0B20064868D /* MediaViewerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7530534B1587E0B20064868D /* MediaViewerController.m */; };
+		753053571587E0B20064868D /* MediaViewerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7530534C1587E0B20064868D /* MediaViewerController.xib */; };
+		753053581587E0B20064868D /* Notebook in Resources */ = {isa = PBXBuildFile; fileRef = 7530534D1587E0B20064868D /* Notebook */; };
+		753053591587E0B20064868D /* NSData+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7530534F1587E0B20064868D /* NSData+Additions.m */; };
+		7530535A1587E0B20064868D /* NSDataAdditions.zip in Resources */ = {isa = PBXBuildFile; fileRef = 753053501587E0B20064868D /* NSDataAdditions.zip */; };
+		7530535B1587E0B20064868D /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 753053521587E0B20064868D /* Reachability.m */; };
+		7530535C1587E0B20064868D /* recents_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 753053531587E0B20064868D /* recents_icon.png */; };
+		754B9322158BA35D00C486DA /* AppDelegate_Pad.m in Sources */ = {isa = PBXBuildFile; fileRef = 754B9312158BA35D00C486DA /* AppDelegate_Pad.m */; };
+		754B9323158BA35D00C486DA /* AtmosSettingsPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 754B9314158BA35D00C486DA /* AtmosSettingsPanel.m */; };
+		754B9324158BA35D00C486DA /* AtmosSettingsPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 754B9315158BA35D00C486DA /* AtmosSettingsPanel.xib */; };
+		754B9325158BA35D00C486DA /* AtmosSyncPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 754B9317158BA35D00C486DA /* AtmosSyncPanel.m */; };
+		754B9326158BA35D00C486DA /* AtmosSyncPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 754B9318158BA35D00C486DA /* AtmosSyncPanel.xib */; };
+		754B9327158BA35D00C486DA /* AtmosSyncView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 754B9319158BA35D00C486DA /* AtmosSyncView.xib */; };
+		754B9328158BA35D00C486DA /* CollectionContentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 754B931B158BA35D00C486DA /* CollectionContentsViewController.m */; };
+		754B9329158BA35D00C486DA /* MainWindow_Pad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 754B931C158BA35D00C486DA /* MainWindow_Pad.xib */; };
+		754B932A158BA35D00C486DA /* ProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 754B931E158BA35D00C486DA /* ProgressViewController.m */; };
+		754B932B158BA35D00C486DA /* ProgressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 754B931F158BA35D00C486DA /* ProgressViewController.xib */; };
+		754B932C158BA35D00C486DA /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 754B9321158BA35D00C486DA /* RootViewController.m */; };
+		754B932E158BA3ED00C486DA /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 754B932D158BA3ED00C486DA /* MediaPlayer.framework */; };
+		759958D7158B865B0075ABE1 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 759958D6158B865B0075ABE1 /* libsqlite3.dylib */; };
+		759958D9158B86C50075ABE1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 759958D8158B86C50075ABE1 /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		753052E11587E0250064868D /* AtmosReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AtmosReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		753052E51587E0250064868D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		753052E71587E0250064868D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		753052E91587E0250064868D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		753052EB1587E0250064868D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		753052EF1587E0250064868D /* AtmosReader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AtmosReader-Info.plist"; sourceTree = "<group>"; };
+		753052F11587E0250064868D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		753052F31587E0250064868D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		753052F51587E0250064868D /* AtmosReader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AtmosReader-Prefix.pch"; sourceTree = "<group>"; };
+		753052FA1587E0250064868D /* AtmosReader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AtmosReader.xcdatamodel; sourceTree = "<group>"; };
+		753053011587E06F0064868D /* AtmosBaseOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AtmosBaseOperation.h; sourceTree = "<group>"; };
+		753053021587E0700064868D /* AtmosBaseOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AtmosBaseOperation.m; sourceTree = "<group>"; };
+		753053031587E0700064868D /* AtmosCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AtmosCredentials.h; sourceTree = "<group>"; };
+		753053041587E0700064868D /* AtmosCredentials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AtmosCredentials.m; sourceTree = "<group>"; };
+		753053051587E0700064868D /* AtmosLocalStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AtmosLocalStore.h; sourceTree = "<group>"; };
+		753053061587E0700064868D /* AtmosLocalStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AtmosLocalStore.m; sourceTree = "<group>"; };
+		753053071587E0700064868D /* AtmosObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AtmosObject.h; sourceTree = "<group>"; };
+		753053081587E0700064868D /* AtmosObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AtmosObject.m; sourceTree = "<group>"; };
+		753053091587E0700064868D /* AtmosProgressEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AtmosProgressEvent.h; sourceTree = "<group>"; };
+		7530530A1587E0700064868D /* AtmosProgressEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AtmosProgressEvent.m; sourceTree = "<group>"; };
+		7530530B1587E0700064868D /* AtmosProgressListenerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AtmosProgressListenerDelegate.h; sourceTree = "<group>"; };
+		753053151587E07F0064868D /* AtmosUploadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AtmosUploadOperation.h; sourceTree = "<group>"; };
+		753053161587E07F0064868D /* AtmosUploadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AtmosUploadOperation.m; sourceTree = "<group>"; };
+		753053171587E07F0064868D /* bg_img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_img.png; sourceTree = "<group>"; };
+		7530531C1587E0930064868D /* button_base_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_base_blue.png; sourceTree = "<group>"; };
+		7530531D1587E0930064868D /* button_base_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_base_red.png; sourceTree = "<group>"; };
+		7530531E1587E0930064868D /* cloud_green_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud_green_large.png; sourceTree = "<group>"; };
+		7530531F1587E0930064868D /* cloud_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud_green.png; sourceTree = "<group>"; };
+		753053201587E0930064868D /* cloud_image_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud_image_small.png; sourceTree = "<group>"; };
+		753053211587E0930064868D /* cloud_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud_red.png; sourceTree = "<group>"; };
+		753053221587E0930064868D /* cloud_yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud_yellow.png; sourceTree = "<group>"; };
+		753053231587E0930064868D /* collection_icon_24x24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = collection_icon_24x24.png; sourceTree = "<group>"; };
+		753053241587E0930064868D /* collection_icon_32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = collection_icon_32x32.png; sourceTree = "<group>"; };
+		753053251587E0930064868D /* collection_icon_42x42.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = collection_icon_42x42.png; sourceTree = "<group>"; };
+		753053261587E0930064868D /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape.png"; sourceTree = "<group>"; };
+		753053271587E0930064868D /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait.png"; sourceTree = "<group>"; };
+		753053281587E0930064868D /* esu_local.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = esu_local.sqlite; sourceTree = "<group>"; };
+		753053291587E0930064868D /* EsuDownloadObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EsuDownloadObject.h; sourceTree = "<group>"; };
+		7530532A1587E0930064868D /* EsuDownloadObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EsuDownloadObject.m; sourceTree = "<group>"; };
+		7530532B1587E0930064868D /* EsuGetObjectsOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EsuGetObjectsOperation.h; sourceTree = "<group>"; };
+		7530532C1587E0930064868D /* EsuGetObjectsOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EsuGetObjectsOperation.m; sourceTree = "<group>"; };
+		7530532D1587E0930064868D /* ext */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ext; sourceTree = "<group>"; };
+		7530532E1587E0930064868D /* favorites_icon_16x16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favorites_icon_16x16.png; sourceTree = "<group>"; };
+		7530532F1587E0930064868D /* favorites_icon_32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favorites_icon_32x32.png; sourceTree = "<group>"; };
+		753053301587E0930064868D /* Icon-ipad-48x48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-ipad-48x48.png"; sourceTree = "<group>"; };
+		753053311587E0930064868D /* Icon-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-iPad.png"; sourceTree = "<group>"; };
+		753053321587E0930064868D /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		753053481587E0B20064868D /* Large_Image_trans_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Large_Image_trans_bg.png; sourceTree = "<group>"; };
+		753053491587E0B20064868D /* Large_Image.xcf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Large_Image.xcf; sourceTree = "<group>"; };
+		7530534A1587E0B20064868D /* MediaViewerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaViewerController.h; sourceTree = "<group>"; };
+		7530534B1587E0B20064868D /* MediaViewerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaViewerController.m; sourceTree = "<group>"; };
+		7530534C1587E0B20064868D /* MediaViewerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MediaViewerController.xib; sourceTree = "<group>"; };
+		7530534D1587E0B20064868D /* Notebook */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notebook; sourceTree = "<group>"; };
+		7530534E1587E0B20064868D /* NSData+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Additions.h"; sourceTree = "<group>"; };
+		7530534F1587E0B20064868D /* NSData+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Additions.m"; sourceTree = "<group>"; };
+		753053501587E0B20064868D /* NSDataAdditions.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = NSDataAdditions.zip; sourceTree = "<group>"; };
+		753053511587E0B20064868D /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		753053521587E0B20064868D /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		753053531587E0B20064868D /* recents_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recents_icon.png; sourceTree = "<group>"; };
+		7530535E1587E0E10064868D /* iPhone */ = {isa = PBXFileReference; lastKnownFileType = folder; path = iPhone; sourceTree = "<group>"; };
+		754B9311158BA35C00C486DA /* AppDelegate_Pad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate_Pad.h; sourceTree = "<group>"; };
+		754B9312158BA35D00C486DA /* AppDelegate_Pad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate_Pad.m; sourceTree = "<group>"; };
+		754B9313158BA35D00C486DA /* AtmosSettingsPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AtmosSettingsPanel.h; sourceTree = "<group>"; };
+		754B9314158BA35D00C486DA /* AtmosSettingsPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AtmosSettingsPanel.m; sourceTree = "<group>"; };
+		754B9315158BA35D00C486DA /* AtmosSettingsPanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AtmosSettingsPanel.xib; sourceTree = "<group>"; };
+		754B9316158BA35D00C486DA /* AtmosSyncPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AtmosSyncPanel.h; sourceTree = "<group>"; };
+		754B9317158BA35D00C486DA /* AtmosSyncPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AtmosSyncPanel.m; sourceTree = "<group>"; };
+		754B9318158BA35D00C486DA /* AtmosSyncPanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AtmosSyncPanel.xib; sourceTree = "<group>"; };
+		754B9319158BA35D00C486DA /* AtmosSyncView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AtmosSyncView.xib; sourceTree = "<group>"; };
+		754B931A158BA35D00C486DA /* CollectionContentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionContentsViewController.h; sourceTree = "<group>"; };
+		754B931B158BA35D00C486DA /* CollectionContentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionContentsViewController.m; sourceTree = "<group>"; };
+		754B931C158BA35D00C486DA /* MainWindow_Pad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow_Pad.xib; sourceTree = "<group>"; };
+		754B931D158BA35D00C486DA /* ProgressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressViewController.h; sourceTree = "<group>"; };
+		754B931E158BA35D00C486DA /* ProgressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressViewController.m; sourceTree = "<group>"; };
+		754B931F158BA35D00C486DA /* ProgressViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgressViewController.xib; sourceTree = "<group>"; };
+		754B9320158BA35D00C486DA /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		754B9321158BA35D00C486DA /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		754B932D158BA3ED00C486DA /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		759958D6158B865B0075ABE1 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		759958D8158B86C50075ABE1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		753052DE1587E0240064868D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				754B932E158BA3ED00C486DA /* MediaPlayer.framework in Frameworks */,
+				759958D9158B86C50075ABE1 /* SystemConfiguration.framework in Frameworks */,
+				759958D7158B865B0075ABE1 /* libsqlite3.dylib in Frameworks */,
+				753052E61587E0250064868D /* UIKit.framework in Frameworks */,
+				753052E81587E0250064868D /* Foundation.framework in Frameworks */,
+				753052EA1587E0250064868D /* CoreGraphics.framework in Frameworks */,
+				753052EC1587E0250064868D /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		753052D61587E0240064868D = {
+			isa = PBXGroup;
+			children = (
+				754B932D158BA3ED00C486DA /* MediaPlayer.framework */,
+				759958D8158B86C50075ABE1 /* SystemConfiguration.framework */,
+				759958D6158B865B0075ABE1 /* libsqlite3.dylib */,
+				753052ED1587E0250064868D /* AtmosReader */,
+				753052E41587E0250064868D /* Frameworks */,
+				753052E21587E0250064868D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		753052E21587E0250064868D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				753052E11587E0250064868D /* AtmosReader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		753052E41587E0250064868D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				753052E51587E0250064868D /* UIKit.framework */,
+				753052E71587E0250064868D /* Foundation.framework */,
+				753052E91587E0250064868D /* CoreGraphics.framework */,
+				753052EB1587E0250064868D /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		753052ED1587E0250064868D /* AtmosReader */ = {
+			isa = PBXGroup;
+			children = (
+				753053011587E06F0064868D /* AtmosBaseOperation.h */,
+				753053021587E0700064868D /* AtmosBaseOperation.m */,
+				753053031587E0700064868D /* AtmosCredentials.h */,
+				753053041587E0700064868D /* AtmosCredentials.m */,
+				753053051587E0700064868D /* AtmosLocalStore.h */,
+				753053061587E0700064868D /* AtmosLocalStore.m */,
+				753053071587E0700064868D /* AtmosObject.h */,
+				753053081587E0700064868D /* AtmosObject.m */,
+				753053091587E0700064868D /* AtmosProgressEvent.h */,
+				7530530A1587E0700064868D /* AtmosProgressEvent.m */,
+				7530530B1587E0700064868D /* AtmosProgressListenerDelegate.h */,
+				753052F91587E0250064868D /* AtmosReader.xcdatamodeld */,
+				753053151587E07F0064868D /* AtmosUploadOperation.h */,
+				753053161587E07F0064868D /* AtmosUploadOperation.m */,
+				753053171587E07F0064868D /* bg_img.png */,
+				7530531C1587E0930064868D /* button_base_blue.png */,
+				7530531D1587E0930064868D /* button_base_red.png */,
+				7530531F1587E0930064868D /* cloud_green.png */,
+				7530531E1587E0930064868D /* cloud_green_large.png */,
+				753053201587E0930064868D /* cloud_image_small.png */,
+				753053211587E0930064868D /* cloud_red.png */,
+				753053221587E0930064868D /* cloud_yellow.png */,
+				753053231587E0930064868D /* collection_icon_24x24.png */,
+				754B9311158BA35C00C486DA /* AppDelegate_Pad.h */,
+				754B9312158BA35D00C486DA /* AppDelegate_Pad.m */,
+				754B9313158BA35D00C486DA /* AtmosSettingsPanel.h */,
+				754B9314158BA35D00C486DA /* AtmosSettingsPanel.m */,
+				754B9315158BA35D00C486DA /* AtmosSettingsPanel.xib */,
+				754B9316158BA35D00C486DA /* AtmosSyncPanel.h */,
+				754B9317158BA35D00C486DA /* AtmosSyncPanel.m */,
+				754B9318158BA35D00C486DA /* AtmosSyncPanel.xib */,
+				754B9319158BA35D00C486DA /* AtmosSyncView.xib */,
+				754B931A158BA35D00C486DA /* CollectionContentsViewController.h */,
+				754B931B158BA35D00C486DA /* CollectionContentsViewController.m */,
+				754B931C158BA35D00C486DA /* MainWindow_Pad.xib */,
+				754B931D158BA35D00C486DA /* ProgressViewController.h */,
+				754B931E158BA35D00C486DA /* ProgressViewController.m */,
+				754B931F158BA35D00C486DA /* ProgressViewController.xib */,
+				754B9320158BA35D00C486DA /* RootViewController.h */,
+				754B9321158BA35D00C486DA /* RootViewController.m */,
+				753053241587E0930064868D /* collection_icon_32x32.png */,
+				753053251587E0930064868D /* collection_icon_42x42.png */,
+				753053261587E0930064868D /* Default-Landscape.png */,
+				7530535E1587E0E10064868D /* iPhone */,
+				753053271587E0930064868D /* Default-Portrait.png */,
+				753053281587E0930064868D /* esu_local.sqlite */,
+				753053291587E0930064868D /* EsuDownloadObject.h */,
+				7530532A1587E0930064868D /* EsuDownloadObject.m */,
+				7530532B1587E0930064868D /* EsuGetObjectsOperation.h */,
+				7530532C1587E0930064868D /* EsuGetObjectsOperation.m */,
+				7530532D1587E0930064868D /* ext */,
+				7530532E1587E0930064868D /* favorites_icon_16x16.png */,
+				7530532F1587E0930064868D /* favorites_icon_32x32.png */,
+				753053301587E0930064868D /* Icon-ipad-48x48.png */,
+				753053311587E0930064868D /* Icon-iPad.png */,
+				753053321587E0930064868D /* Icon.png */,
+				753053491587E0B20064868D /* Large_Image.xcf */,
+				753053481587E0B20064868D /* Large_Image_trans_bg.png */,
+				7530534A1587E0B20064868D /* MediaViewerController.h */,
+				7530534B1587E0B20064868D /* MediaViewerController.m */,
+				7530534C1587E0B20064868D /* MediaViewerController.xib */,
+				7530534D1587E0B20064868D /* Notebook */,
+				7530534E1587E0B20064868D /* NSData+Additions.h */,
+				7530534F1587E0B20064868D /* NSData+Additions.m */,
+				753053501587E0B20064868D /* NSDataAdditions.zip */,
+				753053511587E0B20064868D /* Reachability.h */,
+				753053521587E0B20064868D /* Reachability.m */,
+				753053531587E0B20064868D /* recents_icon.png */,
+				753052EE1587E0250064868D /* Supporting Files */,
+			);
+			path = AtmosReader;
+			sourceTree = "<group>";
+		};
+		753052EE1587E0250064868D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				753052EF1587E0250064868D /* AtmosReader-Info.plist */,
+				753052F01587E0250064868D /* InfoPlist.strings */,
+				753052F31587E0250064868D /* main.m */,
+				753052F51587E0250064868D /* AtmosReader-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		753052E01587E0240064868D /* AtmosReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 753052FE1587E0250064868D /* Build configuration list for PBXNativeTarget "AtmosReader" */;
+			buildPhases = (
+				753052DD1587E0240064868D /* Sources */,
+				753052DE1587E0240064868D /* Frameworks */,
+				753052DF1587E0240064868D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AtmosReader;
+			productName = AtmosReader;
+			productReference = 753052E11587E0250064868D /* AtmosReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		753052D81587E0240064868D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = EMC;
+			};
+			buildConfigurationList = 753052DB1587E0240064868D /* Build configuration list for PBXProject "AtmosReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 753052D61587E0240064868D;
+			productRefGroup = 753052E21587E0250064868D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				753052E01587E0240064868D /* AtmosReader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		753052DF1587E0240064868D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				753052F21587E0250064868D /* InfoPlist.strings in Resources */,
+				7530531B1587E07F0064868D /* bg_img.png in Resources */,
+				753053331587E0930064868D /* button_base_blue.png in Resources */,
+				753053341587E0930064868D /* button_base_red.png in Resources */,
+				753053351587E0930064868D /* cloud_green_large.png in Resources */,
+				753053361587E0930064868D /* cloud_green.png in Resources */,
+				753053371587E0930064868D /* cloud_image_small.png in Resources */,
+				753053381587E0930064868D /* cloud_red.png in Resources */,
+				753053391587E0930064868D /* cloud_yellow.png in Resources */,
+				7530533A1587E0930064868D /* collection_icon_24x24.png in Resources */,
+				7530533B1587E0930064868D /* collection_icon_32x32.png in Resources */,
+				7530533C1587E0930064868D /* collection_icon_42x42.png in Resources */,
+				7530533D1587E0930064868D /* Default-Landscape.png in Resources */,
+				7530533E1587E0930064868D /* Default-Portrait.png in Resources */,
+				7530533F1587E0930064868D /* esu_local.sqlite in Resources */,
+				753053421587E0930064868D /* ext in Resources */,
+				753053431587E0930064868D /* favorites_icon_16x16.png in Resources */,
+				753053441587E0930064868D /* favorites_icon_32x32.png in Resources */,
+				753053451587E0930064868D /* Icon-ipad-48x48.png in Resources */,
+				753053461587E0930064868D /* Icon-iPad.png in Resources */,
+				753053471587E0930064868D /* Icon.png in Resources */,
+				753053541587E0B20064868D /* Large_Image_trans_bg.png in Resources */,
+				753053551587E0B20064868D /* Large_Image.xcf in Resources */,
+				753053571587E0B20064868D /* MediaViewerController.xib in Resources */,
+				753053581587E0B20064868D /* Notebook in Resources */,
+				7530535A1587E0B20064868D /* NSDataAdditions.zip in Resources */,
+				7530535C1587E0B20064868D /* recents_icon.png in Resources */,
+				754B9324158BA35D00C486DA /* AtmosSettingsPanel.xib in Resources */,
+				754B9326158BA35D00C486DA /* AtmosSyncPanel.xib in Resources */,
+				754B9327158BA35D00C486DA /* AtmosSyncView.xib in Resources */,
+				754B9329158BA35D00C486DA /* MainWindow_Pad.xib in Resources */,
+				754B932B158BA35D00C486DA /* ProgressViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		753052DD1587E0240064868D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				753052F41587E0250064868D /* main.m in Sources */,
+				753052FB1587E0250064868D /* AtmosReader.xcdatamodeld in Sources */,
+				7530530C1587E0700064868D /* AtmosBaseOperation.m in Sources */,
+				7530530D1587E0700064868D /* AtmosCredentials.m in Sources */,
+				7530530F1587E0700064868D /* AtmosObject.m in Sources */,
+				7530530E1587E0700064868D /* AtmosLocalStore.m in Sources */,
+				753053101587E0700064868D /* AtmosProgressEvent.m in Sources */,
+				7530531A1587E07F0064868D /* AtmosUploadOperation.m in Sources */,
+				753053401587E0930064868D /* EsuDownloadObject.m in Sources */,
+				753053411587E0930064868D /* EsuGetObjectsOperation.m in Sources */,
+				753053561587E0B20064868D /* MediaViewerController.m in Sources */,
+				753053591587E0B20064868D /* NSData+Additions.m in Sources */,
+				7530535B1587E0B20064868D /* Reachability.m in Sources */,
+				754B9322158BA35D00C486DA /* AppDelegate_Pad.m in Sources */,
+				754B9323158BA35D00C486DA /* AtmosSettingsPanel.m in Sources */,
+				754B9325158BA35D00C486DA /* AtmosSyncPanel.m in Sources */,
+				754B9328158BA35D00C486DA /* CollectionContentsViewController.m in Sources */,
+				754B932A158BA35D00C486DA /* ProgressViewController.m in Sources */,
+				754B932C158BA35D00C486DA /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		753052F01587E0250064868D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				753052F11587E0250064868D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		753052FC1587E0250064868D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		753052FD1587E0250064868D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		753052FF1587E0250064868D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AtmosReader/AtmosReader-Prefix.pch";
+				INFOPLIST_FILE = "AtmosReader/AtmosReader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		753053001587E0250064868D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AtmosReader/AtmosReader-Prefix.pch";
+				INFOPLIST_FILE = "AtmosReader/AtmosReader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		753052DB1587E0240064868D /* Build configuration list for PBXProject "AtmosReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				753052FC1587E0250064868D /* Debug */,
+				753052FD1587E0250064868D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		753052FE1587E0250064868D /* Build configuration list for PBXNativeTarget "AtmosReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				753052FF1587E0250064868D /* Debug */,
+				753053001587E0250064868D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		753052F91587E0250064868D /* AtmosReader.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				753052FA1587E0250064868D /* AtmosReader.xcdatamodel */,
+			);
+			currentVersion = 753052FA1587E0250064868D /* AtmosReader.xcdatamodel */;
+			path = AtmosReader.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 753052D81587E0240064868D /* Project object */;
+}
